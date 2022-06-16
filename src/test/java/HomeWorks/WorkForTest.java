@@ -1,3 +1,5 @@
+package HomeWorks;
+
 import org.testng.annotations.Test;
 
 public class WorkForTest extends TestInit {
