@@ -17,6 +17,19 @@ public class zakazTest extends TestInit {
 
         Assert.assertTrue(zakazMainPage.deliveryAdress().isDisplayed());
     }
+
+    @Test
+    public void zakazPelmeni2() {
+        ZakazMainPage zakazMainPage = new ZakazMainPage(driver);
+        zakazMainPage.goToPelmeniLaska();
+        zakazMainPage.addToCart().click();
+        zakazMainPage.choiseDdelivery().click();
+        zakazMainPage.regionSelectBtn().click();
+        zakazMainPage.regionKyivSelect().click();
+        zakazMainPage.clickAgreeBtn().click();
+
+        Assert.assertTrue(zakazMainPage.deliveryAdress().isDisplayed());
+    }
 }
 
 
