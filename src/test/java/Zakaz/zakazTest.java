@@ -19,7 +19,7 @@ public class zakazTest extends TestInit {
     }
 
     @Test
-    public void zakazPelmeni() {
+    public void zakazPelmeni2() {
         ZakazMainPage zakazMainPage = new ZakazMainPage(driver);
         zakazMainPage.goToPelmeniLaska();
         zakazMainPage.addToCart().click();
