@@ -47,9 +47,6 @@ public class WorkForTest extends TestInit {
         rozetkaObjectsPage.buyBtn().click();
         rozetkaObjectsPage.cycle(5);
 
-
-
-
     }
 
 
