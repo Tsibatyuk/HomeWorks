@@ -18,7 +18,7 @@ public class TestInit {
         driver.manage().window().maximize();
     }
 
-  //  @AfterMethod
+    @AfterMethod
     public void afterTest() {
         driver.quit();
     }
