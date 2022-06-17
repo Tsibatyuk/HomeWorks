@@ -19,12 +19,6 @@ public class AmazonPageObjects extends BasePage{
     public static final String GAMEPADE = "//div[@data-asin='B099H65X5D']";
     public static final String WHITE_GAMEPAD = "//li[@id='color_name_1']";
     public static final String BUY_OPTION = "//div[@id='exports_desktop_unqualifiedBuybox_all_buying_options_cta_feature_div']";
-    public static final String ADD_TO_CART = "//span[@id='a-autoid-2-offer-1']";
-    public static final String QUANTITY_BTN = "//span[@id='aod-offer-qty-button-1-announce']";
-
-
-
-
 
 
 
@@ -37,8 +31,7 @@ public class AmazonPageObjects extends BasePage{
     public List<WebElement> gamePadSelect(){return getElementsByXpath(GAMEPADE);}
     public WebElement toWhiteGamepadBtn(){return getElementByXpath(WHITE_GAMEPAD);}
     public List<WebElement> buyOptionBtn(){return getElementsByXpath(BUY_OPTION);}
-    public WebElement addToCartBtn(){return getElementByXpath(ADD_TO_CART);}
-    public WebElement quantityBtn(){return getElementByXpath(QUANTITY_BTN);}
+
 
 
 
