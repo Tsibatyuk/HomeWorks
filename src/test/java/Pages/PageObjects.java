@@ -1,5 +1,6 @@
-package HomeWorks;
+package Pages;
 
+import BasePackage.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 

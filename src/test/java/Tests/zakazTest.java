@@ -1,6 +1,7 @@
-package Zakaz;
+package Tests;
 
-import HomeWorks.TestInit;
+import TestInitPackage.TestInit;
+import Pages.ZakazMainPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

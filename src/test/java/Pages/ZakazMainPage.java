@@ -1,6 +1,6 @@
-package Zakaz;
+package Pages;
 
-import HomeWorks.BasePage;
+import BasePackage.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 

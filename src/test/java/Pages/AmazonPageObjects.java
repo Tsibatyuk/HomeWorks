@@ -1,11 +1,12 @@
-package HomeWorks;
+package Pages;
 
+import BasePackage.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class AmazonPageObjects extends BasePage{
+public class AmazonPageObjects extends BasePage {
     public AmazonPageObjects(WebDriver driver) {
         super(driver);
     }

@@ -1,4 +1,4 @@
-package HomeWorks;
+package TestInitPackage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -18,7 +18,7 @@ public class TestInit {
         driver.manage().window().maximize();
     }
 
-    @AfterMethod
+  //  @AfterMethod
     public void afterTest() {
         driver.quit();
     }

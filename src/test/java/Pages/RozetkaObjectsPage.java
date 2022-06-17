@@ -1,12 +1,13 @@
-package HomeWorks;
+package Pages;
 
+import BasePackage.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
 
-public class RozetkaObjectsPage extends BasePage{
+public class RozetkaObjectsPage extends BasePage {
     int numbers = 5;
     public RozetkaObjectsPage(WebDriver driver) {
         super(driver);

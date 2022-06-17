@@ -1,5 +1,9 @@
-package HomeWorks;
+package Tests;
 
+import Pages.AmazonPageObjects;
+import Pages.PageObjects;
+import Pages.RozetkaObjectsPage;
+import TestInitPackage.TestInit;
 import org.testng.annotations.Test;
 
 public class WorkForTest extends TestInit {
