@@ -11,7 +11,8 @@ import java.time.Duration;
 import java.util.List;
 
 public class BasePage {
-    int number;
+    public int number;
+    public int numberOflistElement;
     public WebDriver driver;
     public BasePage(WebDriver driver){
         this.driver = driver;
@@ -35,6 +36,11 @@ public class BasePage {
         Actions actions = new Actions(driver);
         actions.moveToElement(getElementByXpath(locator)).perform();
         return driver.findElement(By.xpath(locator));
+    }
+    public List<WebElement> moveToElements(String locator){
+        Actions actions = new Actions(driver);
+        actions.moveToElement(getElementsByXpath(locator).get(numberOflistElement)).perform();
+        return driver.findElements(By.xpath(locator));
     }
 
 
