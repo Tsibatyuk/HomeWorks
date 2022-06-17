@@ -14,6 +14,7 @@ public class Hotline extends BasePage {
     public static final String HOTLINE_ADRESS = "https://hotline.ua/";
     public static final String LEFT_MENU_LIST = "//i[@class='icon-menu icon-menu-musical_instruments']";
     public static final String GITARS_BTN = "//span[contains(text(), 'Гітари')]";
+    public static final String INSTRUMENT_LIST = "//li[@class='category-navigation__item hidden-below-lg']";
 
 
     public void goToHotline(){
@@ -22,6 +23,9 @@ public class Hotline extends BasePage {
         return moveTo(LEFT_MENU_LIST);}
     public WebElement gitarsSectionSelect(){
         return getElementByXpath(GITARS_BTN);
+    }
+    public List<WebElement> getBowedInstrument(){
+        return getElementsClickAble(INSTRUMENT_LIST);
     }
 
 }
