@@ -6,18 +6,17 @@ public class JusttestForPractice {
     int population;
     String planetName;
 
-    public String Ouer(int population, String planetName){
-        this.population = population;
+    public void quantity(int population){
+        this.population = population;    }
+    public void namePlanet(String planetName){
         this.planetName = planetName;
-        return planetName;
-
     }
 
 @Test
-    public void ourPlanet(){
-
-        Ouer(12,"Kaka" );
-        System.out.println(Ouer(12,"kaka"));
+    public void ourPlanet() {
+        population = 12;
+        planetName = "Earth";
+    System.out.println("planet " + planetName, "has "+population);
     }
 
 
