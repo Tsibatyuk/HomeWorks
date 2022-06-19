@@ -1,5 +1,10 @@
 package Tests;
 
+import org.testng.annotations.Test;
+
+import javax.annotation.Tainted;
+import java.util.Scanner;
+
 public class JusttestForPractice {
     int population;
     int a, b, c;
@@ -13,7 +18,7 @@ public class JusttestForPractice {
         System.out.println("Here we will live");
     }
 
-    public static void main(String[] args) {
+    public void constructor() {
         JusttestForPractice planet = new JusttestForPractice();
         JusttestForPractice planet2 = new JusttestForPractice();
 
@@ -29,12 +34,20 @@ public class JusttestForPractice {
 
 
     }
-    public void first(int a){
-        this.a = a;    }
-    public void second(int b){
-        this.b = b;    }
-    public void third(int c){
-        this.c = c;
+
+    public static void main(String[] args) {
+
+
+        Scanner num = new Scanner(System.in);
+        int chislo;
+        System.out.println("naberu yakes chislo");
+        chislo = num.nextInt();
+        if(chislo == 1){
+        System.out.println("ne te chislo");}
+        if (chislo == 2){
+        System.out.println("te chislo");}
+
+
 
     }
 }
