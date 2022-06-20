@@ -1,10 +1,10 @@
 package Tests;
 
-public class Constructors {
-    int population;
-    String planetName;
+public class Constructors implements Learning{
 
 
-
-
+    @Override
+    public void someInformation() {
+        System.out.println("have some info for you");
+    }
 }

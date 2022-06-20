@@ -1,11 +1,8 @@
 package Tests;
 
-import org.testng.annotations.Test;
-
-import javax.annotation.Tainted;
 import java.util.Scanner;
 
-public class JusttestForPractice {
+public class JusttestForPractice extends Constructors implements Learning {
     int population;
     int a, b, c;
     String planetName;
@@ -36,6 +33,7 @@ public class JusttestForPractice {
     }
 
     public static void main(String[] args) {
+        Constructors constructors = new Constructors();
 
 
         Scanner num = new Scanner(System.in);
@@ -43,12 +41,20 @@ public class JusttestForPractice {
         System.out.println("naberu yakes chislo");
         chislo = num.nextInt();
         if(chislo == 1){
-        System.out.println("ne te chislo");}
+        System.out.println("ne te chislo");
+        }
+
         if (chislo == 2){
-        System.out.println("te chislo");}
+        System.out.println("te chislo");
+        constructors.someInformation();}
 
 
 
+    }
+
+    @Override
+    public void someInformation() {
+        System.out.println("create some interface");
     }
 }
 
