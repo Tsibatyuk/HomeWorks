@@ -38,7 +38,7 @@ public class BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
         return driver.findElement(By.xpath(locator));
     }
-    public WebElement moveTo(String locator){
+    public WebElement moveToWithExplicitWait(String locator){
         Actions actions = new Actions(driver);
         actions.moveToElement(getElementByXpath(locator)).perform();
         return driver.findElement(By.xpath(locator));
@@ -48,5 +48,6 @@ public class BasePage {
         actions.moveToElement(getElementsByXpath(locator).get(numberOflistElement)).perform();
         return driver.findElements(By.xpath(locator));
     }
+
 
 }

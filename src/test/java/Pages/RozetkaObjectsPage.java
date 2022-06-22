@@ -30,7 +30,7 @@ public class RozetkaObjectsPage extends BasePage {
 
     public void goToRozetka(){ driver.get(ROZETKA_LINK);}
     public WebElement menuBtn(){return getElementByXpath(MENU_BTN);}
-    public WebElement smartPhonesListSection(){ return moveTo(SMARTPHONES_SECTION);}
+    public WebElement smartPhonesListSection(){ return moveToWithExplicitWait(SMARTPHONES_SECTION);}
     public List<WebElement> aparatsSectionChoose(){return getElementsByXpath(CAMERAS_SECTION);}
     public List<WebElement> nikonFilterBtn(){return getElementsByXpath(NIKON_FILTER);}
     public WebElement sortingList(){return getElementByXpath(SORTING_LIST);}
