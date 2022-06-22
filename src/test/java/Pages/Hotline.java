@@ -20,7 +20,7 @@ public class Hotline extends BasePage {
     public void goToHotline(){
          driver.get(HOTLINE_ADRESS);    }
     public WebElement muzInstrument(){
-        return moveTo(LEFT_MENU_LIST);}
+        return moveToWithExplicitWait(LEFT_MENU_LIST);}
     public WebElement gitarsSectionSelect(){
         return getElementByXpath(GITARS_BTN);
     }
