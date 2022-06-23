@@ -22,8 +22,9 @@ public class DlyaAndriya extends TestInit {
                 System.out.println("Color of a button : red");
             }
 
-
-            //sleep(5);
+//
+  //sleep(5);
+            //
 
         }
 
