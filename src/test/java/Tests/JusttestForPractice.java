@@ -37,11 +37,14 @@ public class JusttestForPractice extends Constructors implements Learning {
 
 
         Scanner num = new Scanner(System.in);
+
+
         int chislo;
+
         System.out.println("naberu yakes chislo");
         chislo = num.nextInt();
         if(chislo == 1){
-        System.out.println("ne te chislo");
+        System.out.println("ne te chislo");} while (chislo==1){
         }
 
         if (chislo == 2){
@@ -49,8 +52,13 @@ public class JusttestForPractice extends Constructors implements Learning {
         constructors.someInformation();}
 
 
+            }
 
-    }
+
+
+
+
+
 
     @Override
     public void someInformation() {
